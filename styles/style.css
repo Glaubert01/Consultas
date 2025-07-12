@@ -1,0 +1,17 @@
+@import url("header.css");
+@import url("lista.css");
+
+:root {
+    --fonte-principal: "Montserrat", sans-serif;
+    --cor-texto-principal: #464646;
+    --cor-texto-secundario: #A3A3A3;
+    --cor-texto-terciario: #FFFFFF;
+    --laranja-botao: #FFB050;
+    --cor-fundo: #ececec;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+}
