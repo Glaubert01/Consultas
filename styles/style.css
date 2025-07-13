@@ -17,3 +17,7 @@ body {
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
 }
+
+main {
+    padding-bottom: 58px;
+}

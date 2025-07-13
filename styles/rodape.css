@@ -40,36 +40,96 @@
     color: var(--cor-texto-secundario);
 }
 
-.rodape__mais{
+.rodape__mais {
     border: none;
     background: transparent;
     z-index: 101;
-    position: relative;
-}
-
-.menu-flutuante {
-    display: none;
-}
-
-.rodape__mais {
     position: absolute;
     top: -65px;
     right: 20px;
     padding: 1em;
-    background: var(--azul-botao);
-    border-radius: 32px;
-    box-shadow: 0 2px 10px #42a3f3;
+    background: var(--azul-botao);   
+    border-radius: 32px;              
+    box-shadow: 0 2px 10px #42a3f3;  
+}
+
+.rodape__camera,
+.rodape__pin {
+    display: none;
+    background: transparent;
+    z-index: 101;
+    position: absolute;
+    border: none;
+}
+
+.rodape__camera { top: -135px; right: 20px; }
+.rodape__pin { top: -205px; right: 20px; }
+
+.rodape__pin-botao,
+.rodape__camera-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--azul-botao);    
+    border-radius: 50%;               
+    box-shadow: 0 2px 10px #42a3f3; 
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+}
+
+.rodape__camera-icone,
+.rodape__pin-icone {
+    width: 18px;
+    height: 16px;
+}
+
+.fab-com-texto {
+    display: flex;
+    align-items: center;    
+    gap: 12px;              
+}
+
+.fab-texto {
+    background: #fff;
+    color: #002851;               
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #ccc;    
+    font-size: 0.93rem;
+    white-space: nowrap;            
+    opacity: 0;                     
+    transform: translateX(20px);   
+    transition: all 0.25s;
+    pointer-events: none;           
+    display: inline-block;
+}
+
+#togglemenu:checked ~ .rodape__pin .fab-texto,
+#togglemenu:checked ~ .rodape__camera .fab-texto {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 .overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.7); /* Semitransparente */
-  z-index: 100;
-  transition: opacity 0.3s;
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);    /* escurece tela */
+    z-index: 100;
+    transition: opacity 0.3s;
+}
+#togglemenu:checked ~ .overlay {
+    display: block;
 }
 
-#togglemenu:checked ~ .overlay {
-  display: block;
+#togglemenu:checked ~ .rodape__camera { display: block; }
+#togglemenu:checked ~ .rodape__pin { display: block; }
+
+.menu-flutuante {
+    display: none;
 }
