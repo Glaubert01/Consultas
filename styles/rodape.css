@@ -40,10 +40,6 @@
     color: var(--cor-texto-secundario);
 }
 
-.rodape__icone {
-    stroke: blue;
-}
-
 .rodape__mais{
     border: none;
     background: transparent;
