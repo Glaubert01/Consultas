@@ -1,0 +1,45 @@
+.rodape {
+    background-color: var(--cor-texto-terciario);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0 -5px 5px #d1d1d1;
+    height: 58px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape__itens-consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em 0 1em;;
+}
+
+.rodape__itens-calendario {
+    padding: 0.5em 0;
+    width: 20px;
+    height: 22px;
+}
+
+.rodape__itens-texto {
+    font-size: 0.8em;
+    color: var(--azul-botao);
+    font-weight: 400;
+}
+
+.rodape__itens-rotulo {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--cor-texto-secundario);
+}
+
+.rodape__icone {
+    stroke: blue;
+}

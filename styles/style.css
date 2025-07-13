@@ -1,5 +1,6 @@
 @import url("header.css");
 @import url("lista.css");
+@import url("rodape.css");
 
 :root {
     --fonte-principal: "Montserrat", sans-serif;
@@ -8,6 +9,7 @@
     --cor-texto-terciario: #FFFFFF;
     --laranja-botao: #FFB050;
     --cor-fundo: #ececec;
+    --azul-botao: #4894FF;
 
 }
 
