@@ -137,4 +137,29 @@
         width: 46vw;
     }
 
+    .cabecalho__titulo{
+        font-size: 1.5em;
+    }
+
+    .cabecalho__texto, .card__data, .card__nome-nome, .card__horario, .card__botoes {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .card__desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1em 0 1em;
+
+    }
+
+    .card {
+        width: 30.5vw;
+        
+    }
+
 }
