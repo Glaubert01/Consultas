@@ -1,17 +1,18 @@
+/* Card base */
 .card {
     background-color: var(--cor-texto-terciario);
-    margin: 0 1em;
+    margin: 0 1em 1em 1em;
     border-radius: 16px;
-    margin-bottom: 1em;
 }
 
+/* Perfil no card: imagem + info */
 .card__perfil {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 1em;
     gap: 15px;
-    align-items: center;
 }
+
 .card__nome-nome {
     font-size: 1em;
     font-weight: 700;
@@ -20,23 +21,26 @@
 .chat__perfil-foto {
     width: 32px;
     height: 32px;
-    border-radius: 32px;
+    border-radius: 50%; /* Sempre arredonda para círculo */
 }
 
+/* Tipo de consulta e chat */
 .card__tipo {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+/* Label "Hoje", "Amanhã" etc */
 .card__data {
     font-weight: 700;
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
     margin: 2em 0 1em 1.5em;
     color: var(--cor-texto-principal);
     font-size: 1.2em;
 }
 
+/* Ícone e texto juntos */
 .card__camera {
     display: flex;
     gap: 10px;
@@ -48,6 +52,7 @@
     font-size: 0.8em;
 }
 
+/* Linha superior: nome + botão chat */
 .card__chat {
     display: flex;
     justify-content: space-between;
@@ -56,37 +61,30 @@
 }
 
 .card__chat-img {
-    width: 13;
-    height: 13;
-} 
+    width: 13px;
+    height: 13px;
+}
 
 .card__chat-icone {
     display: flex;
-    border: none;              
-    background: var(--cor-fundo);          
-    padding: 0.5em;                
+    border: none;
+    background: var(--cor-fundo);
+    padding: 0.5em;
     cursor: pointer;
     border-radius: 16px;
     align-items: center;
     justify-content: center;
 }
 
-.card__horario {
-    padding: 0.5em;
-}
-
-.card__botoes {
-    display: flex;
-}
-
+/* Info do horário */
 .card__horario {
     border-top: 2px solid var(--cor-fundo);
     padding: 1em 0 1em 1em;
     font-weight: 500;
     font-size: 0.9em;
-
 }
 
+/* Botões de ação do card */
 .card__botoes {
     display: flex;
     gap: 20px;
@@ -95,6 +93,7 @@
     padding: 0 1em 1em 1em;
 }
 
+/* Botões principais */
 .card__botoes-video {
     border: none;
     background: var(--laranja-botao);
@@ -125,6 +124,7 @@
     width: 100%;
 }
 
+/* ==== Responsivo (Tablet) ==== */
 @media screen and (min-width: 768px) {
     .card__tablet {
         display: flex;
@@ -132,34 +132,28 @@
         justify-content: space-between;
         margin-bottom: 1em;
     }
-
     .card {
         width: 46vw;
     }
-
-    .cabecalho__titulo{
-        font-size: 1.5em;
-    }
-
-    .cabecalho__texto, .card__data, .card__nome-nome, .card__horario, .card__botoes {
+    .cabecalho__titulo { font-size: 1.5em; }
+    .cabecalho__texto,
+    .card__data,
+    .card__nome-nome,
+    .card__horario,
+    .card__botoes {
         font-size: 1em;
     }
-
 }
 
+/* ==== Responsivo (Desktop) ==== */
 @media screen and (min-width: 1440px) {
-
     .card__desktop {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 1em 0 1em;
-
+        margin: 0 1em;
     }
-
     .card {
         width: 30.5vw;
-        
     }
-
 }
