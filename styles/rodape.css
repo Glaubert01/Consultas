@@ -1,10 +1,14 @@
 /* Rodapé fixo, arredondado e com sombra no topo */
+* {
+  box-sizing: border-box;
+}
+
 .rodape {
     background-color: var(--cor-texto-terciario);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     box-shadow: 0 -5px 5px #d1d1d1;
-    height: 58px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -26,8 +30,8 @@
 
 .rodape__itens-calendario {
     padding: 0.5em 0;
-    width: 20px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
 }
 
 .rodape__itens-texto {
@@ -142,4 +146,71 @@
 /* Esconde o input do menu flutuante */
 .menu-flutuante {
     display: none;
+}
+
+/* Responsividade do footer em desktops */
+.fab-container {
+  position: fixed;
+  right: 10px;
+  bottom: 64px;
+  z-index: 120;
+}
+
+/* Esconde menu lateral em telas pequenas */
+.menu-lateral {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container{
+        padding-left: 220px;
+    }
+
+  .rodape {
+    display: none !important;
+  }
+
+  .menu-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    background: #fff;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 32px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    gap: 24px;
+  }
+
+  .menu-lateral__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.15s;
+    border-radius: 8px 0 0 8px;
+    width: 100%;
+  }
+
+  .menu-lateral__item.ativo,
+  .menu-lateral__item:hover {
+    background: #e8f4ff;
+    color: var(--azul-botao);
+    border-radius: 16px;
+  }
+  
+  .menu-lateral__item img {
+    width: 26px;
+    height: 26px;
+  }
 }

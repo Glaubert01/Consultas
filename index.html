@@ -18,61 +18,204 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- =================== HEADER =================== -->
-    <header class="cabecalho">
-        <div class="cabecalho__secao">
-            <!-- Imagem de perfil do usuário logado -->
-            <img src="assets/perfil-1.svg" alt="imagem do perfil 1" class="cabecalho__imagem">
-            <div class="cabecalho__conteudo">
-                <!-- Saudação e resumo de consultas -->
-                <h1 class="cabecalho__titulo">Olá, Sônia</h1>
-                <p class="cabecalho__texto">Mais 4 consultas hoje</p>
-            </div>
-        </div>
-    </header>
     
     <!-- =================== MAIN - ÁREA PRINCIPAL =================== -->
-    <main>
-        <!-- =================== CONSULTAS DE HOJE =================== -->
-        <div class="card__data">Hoje</div>
-        <div class="card__desktop">
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <!-- Foto do paciente -->
-                            <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">              
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Luciana Dias</h2>
-                                    <!-- Botão de chat -->
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <!-- Indicação de tipo de consulta (remota) -->
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
+    <div class="container">
+        <main>
+            <!-- =================== HEADER =================== -->
+            <header class="cabecalho">
+                <div class="cabecalho__secao">
+                    <!-- Imagem de perfil do usuário logado -->
+                    <img src="assets/perfil-1.svg" alt="imagem do perfil 1" class="cabecalho__imagem">
+                    <div class="cabecalho__conteudo">
+                        <!-- Saudação e resumo de consultas -->
+                        <h1 class="cabecalho__titulo">Olá, Sônia</h1>
+                        <p class="cabecalho__texto">Mais 4 consultas hoje</p>
+                    </div>
+                </div>
+            </header>
+    
+            <!-- =================== CONSULTAS DE HOJE =================== -->
+            <div class="card__data">Hoje</div>
+            <div class="card__desktop">
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <!-- Foto do paciente -->
+                                <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">              
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Luciana Dias</h2>
+                                        <!-- Botão de chat -->
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <!-- Indicação de tipo de consulta (remota) -->
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Horário da consulta -->
+                            <div class="card__horario">14:00 - 15:00 (1 hora)</div>
+                            <!-- Botões de ação -->
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
                         </div>
-                        <!-- Horário da consulta -->
-                        <div class="card__horario">14:00 - 15:00 (1 hora)</div>
-                        <!-- Botões de ação -->
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
+                    </section>
+                    
+                    <!-- ===== Cartão de consulta: Larissa Santana (local) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">              
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Larissa Santana</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta no local</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">16:00 - 17:00 - (1 hora)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-fisico">Ver endereço</button>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                
+                    </section>
+                </div>
+
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-4.svg" alt="imagem de perfil 4" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Marcos Correia</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- =================== CONSULTAS DE AMANHÃ =================== -->
+            <div class="card__data">Amanhã</div>
+            <div class="card__desktop">
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Clara Lemos (local) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Clara Lemos</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta no local</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">18:00 - 19:00 - (1 hora)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-fisico">Ver endereço</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Luciana Dias</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">14:00 - 15:00 (1 hora)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-4.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Marcos Correia</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card__desktop">
                 <!-- ===== Cartão de consulta: Larissa Santana (local) ===== -->
                 <section class="card">
                     <div class="card__geral">
                         <div class="card__perfil">
-                            <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">              
+                            <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
                             <div class="card__tipo">
                                 <div class="card__chat">
                                     <h2 class="card__nome-nome">Larissa Santana</h2>
@@ -93,48 +236,101 @@
                     </div>
                 </section>
             </div>
-
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-4.svg" alt="imagem de perfil 4" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Marcos Correia</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
+            
+            <!-- =================== CONSULTAS DE QUARTA-FEIRA =================== -->
+            <div class="card__data">Quarta-feira</div>
+            <div class="card__desktop">
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Clara Lemos (local) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Clara Lemos</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta no local</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="card__horario">18:00 - 19:00 - (1 hora)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-fisico">Ver endereço</button>
+                            </div>
                         </div>
-                        <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+                    </section>
 
-        <!-- =================== CONSULTAS DE AMANHÃ =================== -->
-        <div class="card__data">Amanhã</div>
-        <div class="card__desktop">
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Clara Lemos (local) ===== -->
+                    <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Luciana Dias</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">14:00 - 15:00 (1 hora)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="card__tablet">
+                    <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
+                    <section class="card">
+                        <div class="card__geral">
+                            <div class="card__perfil">
+                                <img src="assets/perfil-4.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
+                                <div class="card__tipo">
+                                    <div class="card__chat">
+                                        <h2 class="card__nome-nome">Marcos Correia</h2>
+                                        <button class="card__chat-icone">
+                                            <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
+                                        </button>
+                                    </div>
+                                    <div class="card__camera">
+                                        <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
+                                        <p class="card__tipo-texto">Consulta remota</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
+                            <div class="card__botoes">
+                                <button class="card__botoes-video">Ligar por vídeo</button>
+                                <button class="card__botoes-audio">Ligar por áudio</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card__desktop">
+                <!-- ===== Cartão de consulta: Larissa Santana (local) ===== -->
                 <section class="card">
                     <div class="card__geral">
                         <div class="card__perfil">
                             <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
                             <div class="card__tipo">
                                 <div class="card__chat">
-                                    <h2 class="card__nome-nome">Clara Lemos</h2>
+                                    <h2 class="card__nome-nome">Larissa Santana</h2>
                                     <button class="card__chat-icone">
                                         <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
                                     </button>
@@ -145,262 +341,92 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card__horario">18:00 - 19:00 - (1 hora)</div>
+                        <div class="card__horario">16:00 - 17:00 - (1 hora)</div>
                         <div class="card__botoes">
                             <button class="card__botoes-fisico">Ver endereço</button>
                         </div>
                     </div>
                 </section>
-
-                <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Luciana Dias</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__horario">14:00 - 15:00 (1 hora)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
-                        </div>
-                    </div>
-                </section>
             </div>
+        </main>
 
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-4.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Marcos Correia</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div class="card__desktop">
-            <!-- ===== Cartão de consulta: Larissa Santana (local) ===== -->
-            <section class="card">
-                <div class="card__geral">
-                    <div class="card__perfil">
-                        <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
-                        <div class="card__tipo">
-                            <div class="card__chat">
-                                <h2 class="card__nome-nome">Larissa Santana</h2>
-                                <button class="card__chat-icone">
-                                    <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                </button>
-                            </div>
-                            <div class="card__camera">
-                                <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
-                                <p class="card__tipo-texto">Consulta no local</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__horario">16:00 - 17:00 - (1 hora)</div>
-                    <div class="card__botoes">
-                        <button class="card__botoes-fisico">Ver endereço</button>
-                    </div>
-                </div>
-            </section>
-        </div>
         
-        <!-- =================== CONSULTAS DE QUARTA-FEIRA =================== -->
-        <div class="card__data">Quarta-feira</div>
-        <div class="card__desktop">
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Clara Lemos (local) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Clara Lemos</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta no local</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__horario">18:00 - 19:00 - (1 hora)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-fisico">Ver endereço</button>
-                        </div>
-                    </div>
-                </section>
+         <!-- =================== MENU LATERAL (DESKTOP) =================== -->
+        <nav class="menu-lateral">
+            <div class="menu-lateral__item ativo">
+                <img src="assets/Calendarioicone.svg" alt="Consultas" />
+                <span>Consultas</span>
+            </div>
+            <div class="menu-lateral__item">
+                <img src="assets/clientes icone.svg" alt="Clientes" />
+                <span>Clientes</span>
+            </div>
+            <div class="menu-lateral__item">
+                <img src="assets/relatorios icone.svg" alt="Relatórios" />
+                <span>Relatórios</span>
+            </div>
+            <div class="menu-lateral__item">
+                <img src="assets/menu icone.svg" alt="Menu" />
+                <span>Menu</span>
+            </div>
+        </nav>
 
-                <!-- ===== Cartão de consulta: Luciana Dias (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-2.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Luciana Dias</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__horario">14:00 - 15:00 (1 hora)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
-                        </div>
-                    </div>
-                </section>
+        <!-- =================== BOTÕES FLUTUANTES (FABs) =================== -->
+        <div class="fab-container">
+            <!-- Checkbox para ativar/desativar menu flutuante -->
+            <input type="checkbox" id="togglemenu" class="menu-flutuante" hidden>
+            <!-- Overlay para escurecer o fundo quando menu está ativo -->
+            <label for="togglemenu" class="overlay"></label>
+
+            <!-- Botão flutuante de mais ações (FAB) -->
+            <div class="rodape__mais">
+                <label for="togglemenu" class="rodape__mais-botao" style="z-index: 101;">
+                    <img src="assets/maisicone.svg" alt="icone de +" class="rodape__mais-icone">
+                </label>
             </div>
 
-            <div class="card__tablet">
-                <!-- ===== Cartão de consulta: Marcos Correia (remota) ===== -->
-                <section class="card">
-                    <div class="card__geral">
-                        <div class="card__perfil">
-                            <img src="assets/perfil-4.svg" alt="imagem de perfil 2" class="chat__perfil-foto">
-                            <div class="card__tipo">
-                                <div class="card__chat">
-                                    <h2 class="card__nome-nome">Marcos Correia</h2>
-                                    <button class="card__chat-icone">
-                                        <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                    </button>
-                                </div>
-                                <div class="card__camera">
-                                    <img src="assets/Camera.svg" alt="imagem de camera" class="card__tipo-img">
-                                    <p class="card__tipo-texto">Consulta remota</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__horario">17:20 - 18:00 (40 minutos)</div>
-                        <div class="card__botoes">
-                            <button class="card__botoes-video">Ligar por vídeo</button>
-                            <button class="card__botoes-audio">Ligar por áudio</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div class="card__desktop">
-            <!-- ===== Cartão de consulta: Larissa Santana (local) ===== -->
-            <section class="card">
-                <div class="card__geral">
-                    <div class="card__perfil">
-                        <img src="assets/perfil-3.svg" alt="imagem de perfil 3" class="chat__perfil-foto">
-                        <div class="card__tipo">
-                            <div class="card__chat">
-                                <h2 class="card__nome-nome">Larissa Santana</h2>
-                                <button class="card__chat-icone">
-                                    <img src="assets/chat1.svg" alt="icone chat" class="card__chat-img">
-                                </button>
-                            </div>
-                            <div class="card__camera">
-                                <img src="assets/pin.svg" alt="imagem de pin" class="card__tipo-img">
-                                <p class="card__tipo-texto">Consulta no local</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__horario">16:00 - 17:00 - (1 hora)</div>
-                    <div class="card__botoes">
-                        <button class="card__botoes-fisico">Ver endereço</button>
-                    </div>
+            <!-- Opção: Nova consulta na casa do paciente (FAB) -->
+            <div class="rodape__pin">
+                <div class="fab-com-texto">
+                    <span class="fab-texto">Nova consulta na casa do paciente</span>
+                    <button type="button" class="rodape__pin-botao" style="z-index:101;">
+                        <img src="assets/pinfabiconee.svg" alt="icone de pin" class="rodape__pin-icone">
+                    </button>
                 </div>
-            </section>
-        </div>
-    </main>
+            </div>
 
-    <!-- =================== FOOTER - MENU FLUTUANTE =================== -->
-    <footer class="rodape">
-        <!-- Checkbox para ativar/desativar menu flutuante -->
-        <input type="checkbox" id="togglemenu" class="menu-flutuante" hidden>
-        <!-- Overlay para escurecer o fundo quando menu está ativo -->
-        <label for="togglemenu" class="overlay"></label>
-
-        <!-- Botão flutuante de mais ações (FAB) -->
-        <div class="rodape__mais">
-            <label for="togglemenu" class="rodape__mais-botao" style="z-index: 101;">
-                <img src="assets/maisicone.svg" alt="icone de +" class="rodape__mais-icone">
-            </label>
-        </div>
-
-        <!-- Opção: Nova consulta na casa do paciente (FAB) -->
-        <div class="rodape__pin">
-            <div class="fab-com-texto">
-                <span class="fab-texto">Nova consulta na casa do paciente</span>
-                <button type="button" class="rodape__pin-botao" style="z-index:101;">
-                    <img src="assets/pinfabiconee.svg" alt="icone de pin" class="rodape__pin-icone">
-                </button>
+            <!-- Opção: Nova consulta por vídeo (FAB) -->
+            <div class="rodape__camera">
+                <div class="fab-com-texto">
+                    <span class="fab-texto">Nova consulta por vídeo</span>
+                    <button type="button" class="rodape__camera-botao" style="z-index:101;">
+                        <img src="assets/Camerafab.svg" alt="icone de camera" class="rodape__camera-icone">
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Opção: Nova consulta por vídeo (FAB) -->
-        <div class="rodape__camera">
-            <div class="fab-com-texto">
-                <span class="fab-texto">Nova consulta por vídeo</span>
-                <button type="button" class="rodape__camera-botao" style="z-index:101;">
-                    <img src="assets/Camerafab.svg" alt="icone de camera" class="rodape__camera-icone">
-                </button>
+        <!-- =================== FOOTER - MENU INFERIOR (MOBILE) =================== -->
+        <footer class="rodape">
+            <div class="rodape__itens">
+                <div class="rodape__itens-consultas">
+                    <img src="assets/Calendarioicone.svg" alt="imagem de calendario" class="rodape__itens-calendario">
+                    <p class="rodape__itens-texto">Consultas</p>
+                </div>
+                <div class="rodape__itens-consultas">
+                    <img src="assets/clientes icone.svg" alt="imagem de clientes" class="rodape__itens-calendario rodape__icone">
+                    <p class="rodape__itens-rotulo">Clientes</p>
+                </div>
+                <div class="rodape__itens-consultas">
+                    <img src="assets/relatorios icone.svg" alt="imagem de relatorios" class="rodape__itens-calendario rodape__icone">
+                    <p class="rodape__itens-rotulo">Relatórios</p>
+                </div>
+                <div class="rodape__itens-consultas">
+                    <img src="assets/menu icone.svg" alt="imagem de clientes" class="rodape__itens-calendario rodape__icone">
+                    <p class="rodape__itens-rotulo">Menu</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Menu inferior de navegação -->
-        <div class="rodape__itens">
-            <div class="rodape__itens-consultas">
-                <img src="assets/Calendarioicone.svg" alt="imagem de calendario" class="rodape__itens-calendario">
-                <p class="rodape__itens-texto">Consultas</p>
-            </div>
-            <div class="rodape__itens-consultas">
-                <img src="assets/clientes icone.svg" alt="imagem de clientes" class="rodape__itens-calendario rodape__icone">
-                <p class="rodape__itens-rotulo">Clientes</p>
-            </div>
-            <div class="rodape__itens-consultas">
-                <img src="assets/relatorios icone.svg" alt="imagem de relatorios" class="rodape__itens-calendario rodape__icone">
-                <p class="rodape__itens-rotulo">Relatórios</p>
-            </div>
-            <div class="rodape__itens-consultas">
-                <img src="assets/menu icone.svg" alt="imagem de clientes" class="rodape__itens-calendario rodape__icone">
-                <p class="rodape__itens-rotulo">Menu</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
